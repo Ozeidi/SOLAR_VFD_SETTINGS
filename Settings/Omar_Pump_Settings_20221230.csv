@@ -1,0 +1,561 @@
+No.,Name,Value
+P00.00,Speed control mode,2: V/F control
+P00.01,Command running channel,1: Terminal (LED blinking)
+P00.02,Reserved,0
+P00.03,Max. output frequency,50.00
+P00.04,Upper limit of running frequency,50.00
+P00.05,Lower limit of running frequency,0.00
+P00.06,A Frequency command selection,0: Set by Keypad
+P00.07,B Frequency command selection,2: Set by Analog AI2
+P00.08,B Frequency command reference object selection,0: Maximum output frequency
+P00.09,Combination of setting sources,0: A
+P00.10,Frequency set by keypad,50.00
+P00.11,ACC time 1,20.0
+P00.12,DEC time 1,20.0
+P00.13,Running direction selection,0: Runs at the default direction.
+P00.14,Carrier frequency setting,2.0
+P00.15,Motor parameter autotuning,0: No operation
+P00.16,AVR function selection,1: Always valid
+P00.17,Reserved,****
+P00.18,Function parameter restore,0: No operation
+P01.00,Start mode,0: Start directly
+P01.01,Starting frequency in direct start,0.50
+P01.02,Hold time of starting frequency,0.0
+P01.03,Braking current before start,0.0
+P01.04,Braking time before start,0.0
+P01.05,ACC/DEC mode selection,0: Linear
+P01.06,Reserved,****
+P01.07,Reserved,****
+P01.08,Stop mode selection,0: Decelerate to stop
+P01.09,Starting frequency of stop braking,0.00
+P01.10,Waiting time of stop braking,0.0
+P01.11,Stop DC braking current,0.0
+P01.12,Stop DC braking time,0.0
+P01.13,Dead time of FWD/REV rotation,0.0
+P01.14,Mode of switching between FWD/REV rotation,0: Zero-crossing switching
+P01.15,Stopping speed,0.50
+P01.16,Mode for detecting stopping speed,1: Detect the feedback speed (only valid for vector control)
+P01.17,Delay time after stopping speed is detected,5.0
+P01.18,Running protection selection for terminal upon power-on,1: The terminal runs commands properly upon power-on.
+P01.19,Action taken when running frequency is lower than lower limit (valid when the lower frequency limit is above 0),0: Run at the lower frequency limit
+P01.20,Hibernation restore delay time,0.0
+P01.21,Selection for restart after power failure,1: Enabled
+P01.22,Waiting time for restart after power failure,1.0
+P01.23,Start delay time,0.0
+P01.24,Delay time after stopping speed is detected,0.0
+P01.25,Reserved,****
+P02.00,Reserved,****
+P02.01,Rated power of asynchronous motor 1,11.0
+P02.02,Rated frequency of asynchronous motor 1,50.00
+P02.03,Rated speed of asynchronous motor 1,2800
+P02.04,Rated voltage of asynchronous motor 1,415
+P02.05,Rated current of asynchronous motor 1,25.0
+P02.06,Stator resistor of asynchronous motor 1,0.345
+P02.07,Rotor resistor of asynchronous motor 1,0.280
+P02.08,Leakage inductance of asynchronous motor 1,3.3
+P02.09,Mutual inductance of asynchronous motor 1,85.2
+P02.10,No-load current of asynchronous motor 1,8.1
+P02.11,Magnetic saturation coefficient 1 for iron core of asynchronous motor 1,80.0
+P02.12,Magnetic saturation coefficient 2 for iron core of asynchronous motor 1,68.0
+P02.13,Magnetic saturation coefficient 3 for iron core of asynchronous motor 1,57.0
+P02.14,Magnetic saturation coefficient 4 for iron core of asynchronous motor 1,40.0
+P02.15,Reserved,****
+P02.16,Reserved,****
+P02.17,Reserved,****
+P02.18,Reserved,****
+P02.19,Reserved,****
+P02.20,Reserved,****
+P02.21,Reserved,****
+P02.22,Reserved,****
+P02.23,Reserved,****
+P02.24,Reserved,****
+P02.25,Reserved,****
+P02.26,Motor 1 overload protection selection,2: Frequency conversion motor (without low speed compensation)
+P02.27,Motor 1 overload protection
+coefficient,100.0
+P02.28,Reserved,****
+P02.29,Reserved,****
+P03.00,Speed loop proportional gain 1,20.0
+P03.01,Speed loop integral time 1,0.200
+P03.02,Low switching frequency,5.00
+P03.03,Speed loop proportional gain 2,10.0
+P03.04,Speed loop integral time 2,0.100
+P03.05,High switching
+frequency,10.00
+P03.06,Speed loop output filter,0
+P03.07,Slip compensation coefficient for vector control (electromotion),100
+P03.08,Slip compensation coefficient for vector control (power generation),100
+P03.09,Current loop proportional coefficient P,1000
+P03.10,Current loop integral coefficient I,1000
+P03.11,Torque setting mode selection,0: Torque control is invalid
+P03.12,Torque set by keypad,50.0
+P03.13,Torque reference filter time,0.100
+P03.14,Source for setting upper frequency limit of forward rotation in torque control,0: Keypad (P03.16)
+P03.15,Source for setting upper frequency limit of reverse rotation in torque control,0: Keypad (P03.17)
+P03.16,Torque control forward rotation upper frequency limit set by keypad,50.00
+P03.17,Torque control reverse rotation upper frequency limit set by keypad,50.00
+P03.18,Source for setting upper limit of electromotion torque,0: Keypad (P03.20)
+P03.19,Source for setting upper limit of braking torque,0: Keypad (P03.21)
+P03.20,Electromotion torque upper limit set by keypad,180.0
+P03.21,Braking torque upper limit set by keypad,180.0
+P03.22,Flux-weakening coefficient in constant power zone,0.3
+P03.23,Lowest flux-weakening point in constant power zone,20
+P03.24,Max. voltage limit,100.0
+P03.25,Reserved,****
+P03.26,Reserved,****
+P03.27,Reserved,****
+P03.28,Reserved,****
+P03.29,Reserved,****
+P04.00,V/F curve setting for motor 1,4: Torque-stepdown characteristic V/F curve (2.0 order) 
+P04.01,Torque boost of motor 1,0.0
+P04.02,Torque boost stop of motor 1,20.0
+P04.03,V/F frequency point 1 of motor 1,0.00
+P04.04,V/F voltage point 1 of motor 1,0.0
+P04.05,V/F frequency point 2 of motor 1,0.00
+P04.06,V/F voltage point 2 of motor 1,0.0
+P04.07,V/F frequency point 3 of motor 1,0.00
+P04.08,V/F voltage point 3 of motor 1,0.0
+P04.09,V/F slip compensation gain of motor 1,0.0
+P04.10,Low-frequency oscillation control factor of motor 1,10
+P04.11,High-frequency oscillation control factor of motor 1,10
+P04.12,Oscillation control threshold of motor 1,30.00
+P04.13,Reserved,****
+P04.14,Reserved,****
+P04.15,Reserved,****
+P04.16,Reserved,****
+P04.17,Reserved,****
+P04.18,Reserved,****
+P04.19,Reserved,****
+P04.20,Reserved,****
+P04.21,Reserved,****
+P04.22,Reserved,****
+P04.23,Reserved,****
+P04.24,Reserved,****
+P04.25,Reserved,****
+P04.26,Reserved,****
+P04.27,Voltage setting channel selection,0: Set the voltage by keypad (determined by P04.28)
+P04.28,Voltage set by keypad,100.0
+P04.29,Voltage increasing time,5.0
+P04.30,Voltage decreasing time,5.0
+P04.31,Max. voltage output,100.0
+P04.32,Min. voltage output,0.0
+P04.33,VF flux-weakening coefficient in constant power zone,1.00
+P04.34,Single-phase drive mode selection,0x0000
+P04.35,Voltage ratio of secondary winding (phase V) to main winding (phase U),1.40
+P05.00,HDI input type selection,1:  Switching value input
+P05.01,S1 terminal function selection,42: Forced to switch to the power frequency (switch-on indicates switching to the power frequency, and switch-off indicates the input mode is controlled by keypad)
+P05.02,S2 terminal function selection,0: No function 
+P05.03,S3 terminal function selection,0: No function 
+P05.04,S4 terminal function selection,45: Two-phase control mode for the single-phase motor
+P05.05,Reserved,****
+P05.06,Reserved,****
+P05.07,Reserved,****
+P05.08,Reserved,****
+P05.09,HDI terminal function selection,46: PV switching value input for the non-boost module (used for automatic switching)
+P05.10,Input terminal polarity selection,0x0000
+P05.11,Switching value filter time,0.010
+P05.12,Virtual terminal setting,0: Virtual terminals are disabled.
+P05.13,Terminal control running mode,0: 2-wire control 1
+P05.14,S1 terminal switching on delay time,0.000
+P05.15,S1 terminal switching off delay time,0.000
+P05.16,S2 terminal switching on delay time,0.000
+P05.17,S2 terminal switching off delay time,0.000
+P05.18,S3 terminal switching on delay time,0.000
+P05.19,S3 terminal switching off delay time,0.000
+P05.20,S4 terminal switching on delay time,0.000
+P05.21,S4 terminal switching off delay time,0.000
+P05.22,Reserved,****
+P05.23,Reserved,****
+P05.24,Reserved,****
+P05.25,Reserved,****
+P05.26,Reserved,****
+P05.27,Reserved,****
+P05.28,Reserved,****
+P05.29,Reserved,****
+P05.30,HDI terminal switching on delay time,0.000
+P05.31,HDI terminal switching off delay time,0.000
+P05.32,Lower limit of AI1,0.00
+P05.33,Setting corresponding to lower limit of AI1,0.0
+P05.34,Upper limit of AI1,10.00
+P05.35,Setting corresponding to upper limit of AI1,100.0
+P05.36,AI1 input filter time,0.100
+P05.37,Lower limit of AI2,0.00
+P05.38,Setting corresponding to lower limit of AI2,0.0
+P05.39,Upper limit of AI2,10.00
+P05.40,Setting corresponding to upper limit of AI2,100.0
+P05.41,AI2 input filter time,0.100
+P05.42,Lower limit of AI3,-10.00
+P05.43,Setting corresponding to lower limit of AI3,-100.0
+P05.44,Middle value of AI3,0.00
+P05.45,Setting corresponding to middle value of  AI3,0.0
+P05.46,Upper limit of AI3,10.00
+P05.47,Setting corresponding to upper limit of AI3,100.0
+P05.48,AI3 input filter time,0.100
+P05.49,Reserved,****
+P05.50,Lower frequency limit of HDI1,0.00
+P05.51,Setting corresponding to lower frequency limit of HDI1,0.0
+P05.52,Upper frequency limit of HDI1,50.00
+P05.53,Setting corresponding to upper frequency limit of HDI1,100.0
+P05.54,HDI1 frequency input filter time,0.100
+P06.00,Reserved,****
+P06.01,Reserved,****
+P06.02,Reserved,****
+P06.03,Relay RO1 output selection,5: Inverter fault
+P06.04,Relay RO2 output selection,5: Inverter fault
+P06.05,Output terminal polarity selection,0x0000
+P06.06,Reserved,****
+P06.07,Reserved,****
+P06.08,Reserved,****
+P06.09,Reserved,****
+P06.10,Relay RO1 switching on delay time,10.000
+P06.11,Relay RO1 switching off delay time,10.000
+P06.12,Relay RO2 switching on delay time,0.000
+P06.13,Relay RO2 switching off delay time,0.000
+P06.14,AO1 output selection,0: Running frequency 
+P06.15,AO2 output selection,0: Running frequency 
+P06.16,Reserved,****
+P06.17,Lower limit of AO1 output,0.0
+P06.18,AO1 output corresponding to lower limit,0.00
+P06.19,Upper limit of AO1 output,100.0
+P06.20,AO1 output corresponding to upper limit,10.00
+P06.21,AO1 output filter time,0.000
+P06.22,Lower limit of AO2 output,0.0
+P06.23,AO2 output corresponding to lower limit,0.00
+P06.24,Upper limit of AO2 output,100.0
+P06.25,AO2 output corresponding to upper limit,10.00
+P06.26,AO2 output filter time,0.000
+P06.27,Reserved,****
+P06.28,Reserved,****
+P06.29,Reserved,****
+P06.30,Reserved,****
+P06.31,Reserved,****
+P07.00,User password,****
+P07.01,Reserved,****
+P07.02,QUICK/JOG function selection,6: Switch the reference command running sources in sequence
+P07.03,Selection for sequence of command running channel switching by using QUICK,1: Keypad control<---->terminal control
+P07.04,STOP/RST stop function selection,1: Valid for both keypad and terminal control 
+P07.05,Selection 1 for parameters displayed in running state,0x003F
+P07.06,Selection 2 for parameters displayed in running state,0x0000
+P07.07,Selection for parameters displayed in stop state,0x000F
+P07.08,Frequency display coefficient,1.00
+P07.09,Speed display coefficient,100.0
+P07.10,Linear speed display coefficient,1.0
+P07.11,Rectifier bridge module temperature,0.0
+P07.12,Inverter module temperature,37.2
+P07.13,Control panel software version,2.00
+P07.14,Local accumulative running time,8675
+P07.15,MSB of inverter power consumption,20
+P07.16,LSB of inverter power consumption,742.4
+P07.17,Reserved,****
+P07.18,Rated power of inverter,15.0
+P07.19,Rated voltage of inverter,380
+P07.20,Rated current of inverter,32.0
+P07.21,Factory bar code 1,0x0000
+P07.22,Factory bar code 2,0x0000
+P07.23,Factory bar code 3,0x0000
+P07.24,Factory bar code 4,0x0000
+P07.25,Factory bar code 5,0x0000
+P07.26,Factory bar code 6,0x0000
+P07.27,Type of current fault,10: Bus undervoltage fault (UV)
+P07.28,Type of last fault,10: Bus undervoltage fault (UV)
+P07.29,Type of last but one fault,10: Bus undervoltage fault (UV)
+P07.30,Type of last but two fault,10: Bus undervoltage fault (UV)
+P07.31,Type of last but three fault,10: Bus undervoltage fault (UV)
+P07.32,Type of last but four fault,10: Bus undervoltage fault (UV)
+P07.33,Running frequency at current fault,1.05
+P07.34,Ramp frequency reference at current fault,1.05
+P07.35,Output voltage at current fault,9
+P07.36,Output current at current fault,2.9
+P07.37,Bus voltage at current fault,184.6
+P07.38,Highest temperature at current fault,17.4
+P07.39,Input terminal status at current fault,22
+P07.40,Output terminal status at current fault,0
+P07.41,Running frequency at last fault,1.53
+P07.42,Ramp frequency reference at last fault,1.53
+P07.43,Output voltage at last fault,13
+P07.44,Output current at last fault,4.4
+P07.45,Bus voltage at last fault,136.1
+P07.46,Highest temperature at last fault,12.3
+P07.47,Input terminal status at last fault,22
+P07.48,Output terminal status at last fault,0
+P07.49,Running frequency at last but one fault,1.10
+P07.50,Ramp frequency reference at last but one fault,1.10
+P07.51,Output voltage at last but one fault,9
+P07.52,Output current at last but one fault,3.0
+P07.53,Bus voltage at last but one fault,177.2
+P07.54,Highest temperature at last but one fault,12.2
+P07.55,Input terminal status at last but one fault,22
+P07.56,Output terminal status at last but one fault,0
+P07.57,Type of last but five fault,10: Bus undervoltage fault (UV)
+P07.58,Type of last but six fault,0: No fault 
+P07.59,Type of last but seven fault,0: No fault 
+P07.60,Type of last but eight fault,0: No fault 
+P07.61,Type of last but nine fault,0: No fault 
+P07.62,Type of last but ten fault,0: No fault 
+P07.63,Type of last but eleven fault,0: No fault 
+P07.64,Type of last but twelve fault,0: No fault 
+P07.65,Type of last but thirteen fault,0: No fault 
+P07.66,Type of last but fourteen fault,0: No fault 
+P07.67,Type of last but fifteen fault,0: No fault 
+P07.68,Type of last but sixteen fault,0: No fault 
+P07.69,Type of last but seventeen fault,0: No fault 
+P07.70,Type of last but eighteen fault,0: No fault 
+P07.71,Type of last but nineteen fault,0: No fault 
+P08.00,ACC time 2,20.0
+P08.01,DEC time 2,20.0
+P08.02,ACC time 3,20.0
+P08.03,DEC time 3,20.0
+P08.04,ACC time 4,20.0
+P08.05,DEC time 4,20.0
+P08.06,Jog frequency,5.00
+P08.07,Jog ACC time,20.0
+P08.08,Jog DEC time,20.0
+P08.09,Jump frequency 1,0.00
+P08.10,Jump frequency range 1,0.00
+P08.11,Jump frequency 2,0.00
+P08.12,Jump frequency range 2,0.00
+P08.13,Jump frequency 3,0.00
+P08.14,Jump frequency range 3,0.00
+P08.15,Traverse range,0.0
+P08.16,Sudden jump frequency range,0.0
+P08.17,Traverse boost time,5.0
+P08.18,Traverse declining time,5.0
+P08.19,Reserved,****
+P08.20,Reserved,****
+P08.21,Reserved,****
+P08.22,Reserved,****
+P08.23,Reserved,****
+P08.24,Reserved,****
+P08.25,Set count value,0
+P08.26,Specified count value,0
+P08.27,Set running time,0
+P08.28,Fault auto-reset count,5
+P08.29,Fault auto-reset interval,10.0
+P08.30,Frequency decreasing rate in droop control,0.00
+P08.31,Reserved,****
+P08.32,FDT1 electrical level detection threshold,50.00
+P08.33,FDT1 lag detection threshold,5.0
+P08.34,FDT2 electrical level detection threshold,50.00
+P08.35,FDT2 lag detection threshold,5.0
+P08.36,Value detected when frequency reached,0.00
+P08.37,Enable dynamic braking,0: Disabled
+P08.38,Dynamic braking threshold voltage,700.0
+P08.39,Cooling fan running mode,0: Normal operation mode
+P08.40,PWM selection,0x0000
+P08.41,Overmodulation selection,0: Disabled
+P08.42,Keypad digital control setting,0x0000
+P08.43,Integral rate of keypad digital potentiometer,0.10
+P08.44,UP/DOWN terminal control setting,0x0000
+P08.45,Incremental integral rate of UP terminal frequency,0.50
+P08.46,Integral rate of DOWN terminal frequency,0.50
+P08.47,Action taken at power failure during frequency setting,0x0000
+P08.48,MSB of initial power consumption,0
+P08.49,LSB of initial power consumption,0.0
+P08.50,Magnetic flux braking coefficient,0
+P08.51,Inverter input power factor,0.56
+P09.00,PID reference source selection,0: Keypad (P09.01)
+P09.01,PID reference preset by keypad,0.0
+P09.02,PID feedback source selection,0: Analog channel AI1
+P09.03,PID output feature selection,0: PID output is positive
+P09.04,Proportional gain (Kp),1.00
+P09.05,Integral time (Ti),0.10
+P09.06,Differential time (Td),0.00
+P09.07,Sampling cycle (T),0.100
+P09.08,PID control deviation limit,0.0
+P09.09,Upper limit of PID output,100.0
+P09.10,Lower limit of PID output,0.0
+P09.11,Feedback loss detection threshold,0.0
+P09.12,Feedback loss detection time,1.0
+P09.13,PID adjustment selection,0x0000
+P09.14,Reserved,****
+P09.15,Reserved,****
+P09.16,Reserved,****
+P10.00,Simple PLC mode,0: Stop after running once
+P10.01,Simple PLC memory selection,0: Clear at power failure   
+P10.02,Multi-step speed 0,0.0
+P10.03,Running time of step 0,0.0
+P10.04,Multi-step speed 1,0.0
+P10.05,Running time of step 1,0.0
+P10.06,Multi-step speed 2,0.0
+P10.07,Running time of step 2,0.0
+P10.08,Multi-step speed 3,0.0
+P10.09,Running time of step 3,0.0
+P10.10,Multi-step speed 4,0.0
+P10.11,Running time of step 4,0.0
+P10.12,Multi-step speed 5,0.0
+P10.13,Running time of step 5,0.0
+P10.14,Multi-step speed 6,0.0
+P10.15,Running time of step 6,0.0
+P10.16,Multi-step speed 7,0.0
+P10.17,Running time of step 7,0.0
+P10.18,Multi-step speed 8,0.0
+P10.19,Running time of step 8,0.0
+P10.20,Multi-step speed 9,0.0
+P10.21,Running time of step 9,0.0
+P10.22,Multi-step speed 10,0.0
+P10.23,Running time of step 10,0.0
+P10.24,Multi-step speed 11,0.0
+P10.25,Running time of step 11,0.0
+P10.26,Multi-step speed 12,0.0
+P10.27,Running time of step 12,0.0
+P10.28,Multi-step speed 13,0.0
+P10.29,Running time of step 13,0.0
+P10.30,Multi-step speed 14,0.0
+P10.31,Running time of step 14,0.0
+P10.32,Multi-step speed 15,0.0
+P10.33,Running time of step 15,0.0
+P10.34,ACC/DEC time selection for steps 0–7 of simple PLC,0x0000
+P10.35,ACC/DEC time selection for steps 8–15 of simple PLC,0x0000
+P10.36,PLC restart mode selection,0: Restart from the first step
+P10.37,Multi-step time unit selection,0: Second                   
+P11.00,Phase loss protection,0x0010
+P11.01,Frequency decreasing function selection at sudden power failure,0
+P11.02,Frequency decreasing rate at sudden power failure,0.00
+P11.03,Overvoltage stall protection,0: Disabled      
+P11.04,Overvoltage stall protection voltage,140
+P11.05,Current limit selection,1: Current limit is always valid
+P11.06,Automatic current limit level,160.0
+P11.07,Decreasing rate when current is limited,10.00
+P11.08,Inverter or motor overload/underload alarm selection,0x0000
+P11.09,Overload alarm detection threshold,150
+P11.10,Overload alarm detection time,1.0
+P11.11,Underload alarm detection threshold,50
+P11.12,Underload alarm detection time,1.0
+P11.13,Action selection for faulty output terminal,0x0000
+P11.14,Speed deviation detection threshold,10.0
+P11.15,Speed deviation detection time,0.5
+P11.16,Reserved,****
+P12.00,Reserved,****
+P12.01,Reserved,****
+P12.02,Reserved,****
+P12.03,Reserved,****
+P12.04,Reserved,****
+P12.05,Reserved,****
+P12.06,Reserved,****
+P12.07,Reserved,****
+P12.08,Reserved,****
+P12.09,Reserved,****
+P12.10,Reserved,****
+P12.11,Reserved,****
+P12.12,Reserved,****
+P12.13,Reserved,****
+P12.14,Reserved,****
+P12.15,Reserved,****
+P12.16,Reserved,****
+P12.17,Reserved,****
+P12.18,Reserved,****
+P12.19,Reserved,****
+P12.20,Reserved,****
+P12.21,Reserved,****
+P12.22,Reserved,****
+P12.23,Reserved,****
+P12.24,Reserved,****
+P12.25,Reserved,****
+P12.26,Reserved,****
+P12.27,Reserved,****
+P12.28,Reserved,****
+P12.29,Reserved,****
+P13.00,Reserved,****
+P13.01,Reserved,****
+P13.02,Reserved,****
+P13.03,Reserved,****
+P13.04,Reserved,****
+P13.05,Reserved,****
+P13.06,Reserved,****
+P13.07,Reserved,****
+P13.08,Reserved,****
+P13.09,Reserved,****
+P13.10,Reserved,****
+P13.11,Reserved,****
+P13.12,Reserved,****
+P13.13,Reserved,****
+P13.14,Reserved,****
+P13.15,Reserved,****
+P14.00,Local communication address,1
+P14.01,Communication baud rate setting,4: 19200BPS
+P14.02,Data bit check setting,1: Even check (8, E, 1) for RTU
+P14.03,Communication response delay,5
+P14.04,Communication timeout fault time,0.0
+P14.05,Transmission error processing,0: Generate an alarm and coast to stop
+P14.06,Action selection for communication processing,0x0000
+P14.07,Reserved,****
+P14.08,Reserved,****
+P15.00,PV inverter selection,1: The PV function is enabled.
+P15.01,Vmpp voltage reference source selection,1: Tracking the MPPT maximum power
+P15.02,Vmpp voltage reference set by keypad,450.0
+P15.03,PI control deviation limit,0.0
+P15.04,Upper frequency limit of PI output,100.0
+P15.05,Lower frequency limit of PI output,50.0
+P15.06,KP1,5.00
+P15.07,KI1,5.00
+P15.08,KP2,35.00
+P15.09,KI2,35.00
+P15.10,PI switching point,20.0
+P15.11,Water level control selection,0: Switching value input
+P15.12,Full water level threshold,25.0
+P15.13,Empty water level threshold,75.0
+P15.14,Full water level delay time,5
+P15.15,Full water level delay time,20
+P15.16,Full water level delay time,0
+P15.17,Empty water level delay time,20
+P15.18,Hydraulic probe damage,0.0
+P15.19,Underload running time of water pump,60.0
+P15.20,Current detection threshold for underload running,0.0
+P15.21,Underload reset delay,120.0
+P15.22,Lag frequency threshold,0.30
+P15.23,Low light delay time,100.0
+P15.24,Low light  wake-up delay time,300.0
+P15.25,Displayed actual initial voltage reference,7196
+P15.26,Min. MPPT voltage reference,0.70
+P15.27,Max. MPPT voltage reference,750.0
+P15.28,Adjustment of initial reference voltage,10.0
+P15.29,Automatic adjustment time for Vmppt upper/lower limit,1.0
+P15.30,Automatic adjustment range for Vmppt upper/lower limit,30.0
+P15.31,Max. value of Vmppt,750.0
+P15.32,PV input and power frequency input selection,2: Forced PV input
+P15.33,Setting for threshold to switch to power frequency input,240.0
+P15.34,Setting for threshold to switch to PV input,300.0
+P15.35,Rated flow of water pump,0.0
+P15.36,Rated lift of water pump,0.0
+P15.37,Voltage setting at PV undervoltage point,240.0
+P15.38,Reserved,****
+P15.39,Product model,3: –4     380V three-phase input; three-phase output
+P16.00,Reserved,****
+P16.01,Reserved,****
+P16.02,Reserved,****
+P16.03,Reserved,****
+P16.04,Reserved,****
+P16.05,Reserved,****
+P16.06,Reserved,****
+P16.07,Reserved,****
+P16.08,Reserved,****
+P16.09,Reserved,****
+P16.10,Reserved,****
+P16.11,Reserved,****
+P16.12,Reserved,****
+P16.13,Reserved,****
+P16.14,Reserved,****
+P19.00,Boost voltage loop KP,0.500
+P19.01,Boost voltage loop KI,0.080
+P19.02,Boost current loop KP,0.010
+P19.03,Boost current loop KI,0.010
+P19.04,Upper limit of output current of boost voltage loop PI,12.0
+P19.05,Reserved,****
+P19.06,Bus reference voltage,570.0
+P19.07,Boost voltage loop KP1,0.500
+P19.08,Boost voltage loop KI1,0.080
+P19.09,Reserved,****
+P19.10,Boost software version,0.00
+P29.00,Factory password,****
+P29.01,Product model,0: –SS2   220V single-phase input; single-phase output
+P29.02,Inverter power level,Unknown
+P29.03,Inverter power,****
+P29.04,Inverter rated voltage,****
+P29.05,Inverter rated current,****
+P29.06,Dead time,****
+P29.07,Software overvoltage point,****
+P29.08,Software undervoltage point,****
+P29.09,Software overcurrent point,210.0
+P29.10,Input voltage correction coefficient,100.0
+P29.11,Input current correction coefficient,100.0
+P29.12,Time set by factory,0
